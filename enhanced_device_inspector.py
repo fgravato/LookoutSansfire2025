@@ -469,13 +469,6 @@ class EnhancedDeviceInspector:
                         severity = severity.upper()
                     severity_icon = "🚨" if severity == "CRITICAL" or severity == "HIGH" or int(severity) >= 7 else "⚠️" if severity == "MEDIUM" or int(severity) >= 4 else "ℹ️"
                     lines.append(f"{severity_icon} {vuln.get('cve_id')} (CVSS: {vuln.get('cvss_score')})")
-                    lines.append(f"   Severity: {severity}")
-                    lines.append(f"   Component: {vuln.get('affected_component')}")
-                    if vuln.get('published_date'):
-                        lines.append(f"   Published: {vuln.get('published_date')}")
-                    if vuln.get('description'):
-                        lines.append(f"   Description: {vuln.get('description')}")
-                    lines.append("")
             else:
                 lines.append("VULNERABILITIES")
                 lines.append("-" * 30)
