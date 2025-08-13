@@ -1,0 +1,9 @@
+[lookout]
+application_key = 
+base_url = https://api.lookout.com
+
+# Instructions:
+# 1. Replace YOUR_APPLICATION_KEY_HERE with your actual Lookout application key
+# 2. You can get your application key from the Lookout Mobile Endpoint Protection Console
+# 3. Navigate to System > Application Keys and generate a new key
+# 4. Keep this file secure and don't commit it to version control
